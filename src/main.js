@@ -1,6 +1,6 @@
 import "./index.css";
 
-$(document).ready(function () {
+$(document).ready(functoin () {
   $("#sign-in-form").submit(function (e) {
     e.preventDefault();
   });
