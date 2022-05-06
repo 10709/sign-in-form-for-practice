@@ -6,11 +6,20 @@ $(document).ready(functoin () {
   });
 
   //TOOD: 讓帳號密碼輸入時，版型維持
-  $("#account").blur( funtion (e) {
+  $("#account").blur(funtion (e) {
     if ($(e.traget).val !== "") {
-      $("#addr-hint-text").addClass("");
+      $("#addr-hint-text").addClass("-translate-y-5 text-xs text-sky-500");
+    } elas {
+      $("#addr-hint-text").removeclass("-translate-y-5 text-xs text-sky-500")
     }
   });
 
-  $("password");
+  $("password").blur(funtion (e) {
+    if ($(e.traget).val !== "") {
+      $("#addr-hint-text").addClass("-translate-y-5 text-xs text-sky-500");
+    } elas {
+      $("#addr-hint-text").removeclass(
+        "-translate-y-5 text-xs text-sky-500")
+    }
+  });
 });
